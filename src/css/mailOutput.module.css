@@ -1,0 +1,133 @@
+.layout {
+    flex: 4 1 0;
+    /* background: rgb(252, 243, 206); */
+}
+
+
+.content {
+    margin-left: 28px;
+}
+
+.menu {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #979797;
+}
+
+a .flex {
+    text-decoration: none;
+    /* color: green; */
+
+}
+
+.messageTitle {
+    font-style: normal;
+    font-weight: normal;
+    margin: 17px 0;
+    font-size: 24px;
+    line-height: 32px;
+    color: #4C4F59;
+}
+
+
+.circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.circle:hover {
+    transform: scale(.9);
+    transition: transform .4s;
+}
+
+.circle:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.profile {
+    display: flex;
+}
+
+.profileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4C4F59;
+    ;
+}
+
+.mail {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4C4F59;
+}
+
+.article {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #65676E;
+    border-bottom: 1px solid #8E8E9380;
+}
+
+.attachment {
+    width: 110px;
+    margin: 20px 0;
+    border: 1px solid #8E8E9380;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.attachment:hover {
+    border: 1px solid #65676E;
+    color: #65676E;
+
+}
+
+button {
+    width: 125px;
+    height: 45px;
+    margin: 30px 0 20px 0;
+    border-radius: 22px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    outline: none;
+}
+
+button.reply {
+    color: #FFF;
+    /* background: #00B96E; */
+    /* box-shadow: 0 0 15px #079C5F; */
+}
+
+button.forward {
+    background: transparent;
+    box-shadow: 0 0 1px #999EB1;
+    color: #999EB1;
+    margin-left: 15px;
+}
+
+button:hover {
+    transform: scale(.9);
+    transition: transform .4s;
+}

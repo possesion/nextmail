@@ -1,0 +1,31 @@
+$theme-colors: ("primary": #FFF,
+    "danger": #ff4136);
+
+// Your variable overrides
+
+$body-bg: #000;
+$body-color: #111;
+$text-colors: ("primary": #000);
+
+.list-group-item {
+    background: #8E8E93;
+
+    .active {
+        color: black;
+        // border-left: 2px solid blue;
+
+    }
+}
+
+$list-group-color: #4C4F59;
+$list-group-active-color: #4C4F59;
+$list-group-bg:#f8f9fa;
+$list-group-border-color: transparent;
+// $list-group-active-border-color : blue;
+$list-group-item-padding-y: 25px;
+$list-group-item-padding-x: 2px;
+
+
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

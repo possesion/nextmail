@@ -1,0 +1,7 @@
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Inbox">
+    <path d="M13.5 1.5L13.5 13.5L1.5 13.5L1.5 1.5L13.5 1.5L13.5 1.5ZM13.5 0L1.5 0C0.675 0 0 0.675 0 1.5L0 13.5C0 14.325 0.675 15 1.5 15L13.5 15C14.325 15 15 14.325 15 13.5L15 1.5C15 0.675 14.325 0 13.5 0L13.5 0L13.5 0Z" id="Shape" fill="#4C4F59" fill-rule="evenodd" stroke="none" />
+    <path d="M9.75 0C9.75 1.275 8.775 2.25 7.5 2.25C6.225 2.25 5.25 1.275 5.25 0L0 0L0 3C0 3.825 0.675 4.5 1.5 4.5L13.5 4.5C14.325 4.5 15 3.825 15 3L15 0L9.75 0L9.75 0Z" transform="translate(0 10.5)" id="Shape" fill="#4C4F59" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

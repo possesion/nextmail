@@ -10,9 +10,10 @@ const Inbox = ({ messageBox }) => {
                 <input
                     className="form-control mr-sm-2 rounded-pill"
                     type="search"
-                    placeholder="Search"
+                    placeholder=" Search"
                     aria-label="Search"
                 />
+                <img className={styles.searchImg} src="/nextmail/images/search.svg" alt="search" />
             </form>
         </nav>
         <div className={styles.header}>
@@ -28,7 +29,7 @@ const Inbox = ({ messageBox }) => {
             </div>
         </div>
         {/* <div class="col-12"> */}
-        <ul className={styles.wrapper + " list-group overflow-auto"} id="list-tab" role="tablist" style={{ height: '590px' }}>
+        <ul className={styles.wrapper + " list-group overflow-auto"} id="list-tab" role="tablist" style={{ height: '606px' }}>
             {messageBox.map(({ title, contact, time }) => {
                 return <li className={styles.list}>
                     <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">

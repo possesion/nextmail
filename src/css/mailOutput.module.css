@@ -1,17 +1,18 @@
 .layout {
     flex: 4 1 0;
+    width: 548px;
     /* background: rgb(252, 243, 206); */
 }
 
 
 .content {
-    margin-left: 28px;
+    margin-left: 22px;
 }
 
 .menu {
     display: flex;
     margin-top: 30px;
-    padding-left: 30px;
+    padding-left: 24px;
     padding-bottom: 30px;
     border-bottom: 1px solid #979797;
 }
@@ -88,9 +89,13 @@ a .flex {
     border-bottom: 1px solid #8E8E9380;
 }
 
+.signature {
+    margin-top: 52px;
+}
+
 .attachment {
     width: 110px;
-    margin: 20px 0;
+    margin: 32px 0;
     border: 1px solid #8E8E9380;
     border-radius: 4px;
     cursor: pointer;
@@ -102,10 +107,14 @@ a .flex {
 
 }
 
+/* .btnGroup {
+    padding-bottom: 10px;
+} */
+
 button {
     width: 125px;
     height: 45px;
-    margin: 30px 0 20px 0;
+    margin: 20px 0;
     border-radius: 22px;
     font-weight: normal;
     font-size: 14px;

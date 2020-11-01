@@ -8,19 +8,19 @@ import styles from '../css/nextMail.module.css'
 
 const NextMail = () => {
   const [mailBox, setMailbox] = useState([
-    { label: 'Inbox', icon: '/images/inbox.svg', count: '(200)' },
-    { label: 'Sent Mail', icon: '/images/sent.svg', count: '' },
-    { label: 'Drafts', icon: '/images/draft.svg', count: '' },
-    { label: 'Trash', icon: '/images/trash.svg', count: '(2)' },
-    { label: 'Attachments', icon: '/images/attachments.svg', count: '' },
-    { label: 'More...', icon: '/images/more.svg', count: '' }
+    { label: 'Inbox', icon: '/nextmail/images/inbox.svg', count: '(200)' },
+    { label: 'Sent Mail', icon: '/nextmail/images/sent.svg', count: '' },
+    { label: 'Drafts', icon: '/nextmail/images/draft.svg', count: '' },
+    { label: 'Trash', icon: '/nextmail/images/trash.svg', count: '(2)' },
+    { label: 'Attachments', icon: '/nextmail/images/attachments.svg', count: '' },
+    { label: 'More...', icon: '/nextmail/images/more.svg', count: '' }
   ]);
   const [listElements, setListElements] = useState(['LinkedIn']);
   const [labels, setLabels] = useState([
-    { name: 'Personal', icon: '/images/personal.svg' },
-    { name: 'Clients', icon: '/images/clients.svg' },
-    { name: 'Work', icon: '/images/work.svg' },
-    { name: 'Friends', icon: '/images/friends.svg' }
+    { name: 'Personal', icon: '/nextmail/images/personal.svg' },
+    { name: 'Clients', icon: '/nextmail/images/clients.svg' },
+    { name: 'Work', icon: '/nextmail/images/work.svg' },
+    { name: 'Friends', icon: '/nextmail/images/friends.svg' }
   ]);
   const [messages, setMessages] = useState([
     { title: 'Design Language', contact: 'Salman Shah', time: '8:00 PM' },

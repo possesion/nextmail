@@ -1,10 +1,20 @@
 .layout {
     /* flex: 3 1 0; */
+    width: 334px;
     padding-top: 20px;
     background: #f8f9fa !important;
 }
-input.reg::placeholder {
-    color: red;
+
+.form-control::-webkit-input-placeholder {
+    color:#1a3aad;
+
+  }
+
+.searchImg {
+    position: fixed;
+    top: 60px;
+    left: 660px;
+    opacity: .5;
 }
 
 .header {

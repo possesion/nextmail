@@ -7,7 +7,7 @@ const Navigation = (props) => {
   return (
     <div className={styles.layout}>
       <div className={styles.innerBox}>
-        <button><span><img  className="mr-1" src="/images/compose.svg" alt="compose" /></span>Compose</button>
+        <button><span><img  className="mr-1" src="/nextmail/images/compose.svg" alt="compose" /></span>Compose</button>
         <h3>MAILBOX</h3>
         <ul>
           {mailBox.map(({ label, icon, count }) => (
@@ -52,7 +52,7 @@ const Navigation = (props) => {
         </ul>
       </div>
       <div className={styles.profile}>
-        <img src="/images/profile.svg" alt="profileImg" className={styles.profileImg} />
+        <img src="/nextmail/images/profile.svg" alt="profileImg" className={styles.profileImg} />
         <div style={{ marginLeft: '5px' }}>
           <div className={styles.name}>{profile.name}</div>
           <div className={styles.mail}>{profile.mail}</div>

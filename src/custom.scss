@@ -16,11 +16,17 @@ $text-colors: ("primary": #000);
 
     }
 }
+.form-control::-webkit-input-placeholder {
+    color:#1a3aad;
+    padding-left: 14px;
+
+  }
 
 $list-group-color: #4C4F59;
 $list-group-active-color: #4C4F59;
 $list-group-bg:#f8f9fa;
 $list-group-border-color: transparent;
+$input-placeholder-color: #65676E60;
 // $list-group-active-border-color : blue;
 $list-group-item-padding-y: 25px;
 $list-group-item-padding-x: 2px;

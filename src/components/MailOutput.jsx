@@ -7,28 +7,28 @@ const MailOutput = (props) => {
 
         <div className={styles.menu}>
             <div className={styles.circle}>
-                <img src="/images/letter.svg" alt="letter" />
+                <img src="/nextmail/images/letter.svg" alt="letter" />
             </div>
             <div className={styles.circle}>
-                <img src="/images/back.svg" alt="back" />
+                <img src="/nextmail/images/back.svg" alt="back" />
             </div>
             <div className={styles.circle}>
-                <img src="/images/alarm.svg" alt="alarm" />
+                <img src="/nextmail/images/alarm.svg" alt="alarm" />
             </div>
             <div className={styles.circle}>
-                <img src="/images/burger.svg" alt="burger" />
+                <img src="/nextmail/images/burger.svg" alt="burger" />
             </div>
             <div className={styles.circle}>
-                <img src="/images/marker.svg" alt="marker" />
+                <img src="/nextmail/images/marker.svg" alt="marker" />
             </div>
             <div className={styles.circle}>
-                <img src="/images/trash.svg" alt="letter" />
+                <img src="/nextmail/images/trash.svg" alt="letter" />
             </div>
         </div>
         <div className={styles.content}>
             <div className={styles.messageTitle}>Nextmail New Look</div>
             <div className={styles.profile}>
-                <img src="/images/profile.svg" alt="profileImg" className={styles.profileImg} />
+                <img src="/nextmail/images/profile.svg" alt="profileImg" className={styles.profileImg} />
                 <div style={{ marginLeft: '5px' }}>
                     <div className={styles.name}>{profile.name}</div>
                     <div className={styles.mail}>{profile.mail}</div>
@@ -43,18 +43,18 @@ const MailOutput = (props) => {
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident. <br />
-                    <p className="mt-3">Cheers <br /> DesignAvenger</p>
+                    <p className={styles.signature}>Cheers <br /> DesignAvenger</p>
                 </p>
             </div>
             <div className={styles.attachment}>
                 <div className="p-1">
-                    <img src="/images/file.png" alt="file" />
+                    <img src="/nextmail/images/file.png" alt="file" />
                     <span>Sample.pdf</span>
                 </div>
             </div>
-            <div className="btnGroup">
-                <button className={styles.reply}><span><img className="mr-1" src="/images/left.svg" alt="left" /></span>Reply</button>
-                <button className={styles.forward}><span><img className="mr-1" src="/images/right.svg" alt="right" /></span>Forward</button>
+            <div className={styles.btnGroup}>
+                <button className={styles.reply}><span><img className="mr-1" src="/nextmail/images/left.svg" alt="left" /></span>Reply</button>
+                <button className={styles.forward}><span><img className="mr-1" src="/nextmail/images/right.svg" alt="right" /></span>Forward</button>
             </div>
         </div>
     </div>

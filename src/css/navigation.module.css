@@ -1,5 +1,9 @@
 .layout {
-    flex: 2 1 0;
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1.4 1 0;
     color: #8F929D;
 }
 
@@ -40,12 +44,16 @@ ul {
 button {
     width: 125px;
     height: 45px;
-    margin: 30px 0 20px 0;
     border-radius: 22px;
     color: #FFF;
     background: #00B96E;
     box-shadow: 0 0 15px #079C5F;
     border: none;
+    outline: none;
+}
+
+button:active,
+button:focus {
     outline: none;
 }
 

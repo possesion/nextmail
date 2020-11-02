@@ -7,24 +7,29 @@ const Navigation = (props) => {
   return (
     <div className={styles.layout}>
       <div className={styles.innerBox}>
-        <button><span><img  className="mr-1" src="/nextmail/images/compose.svg" alt="compose" /></span>Compose</button>
-        <h3>MAILBOX</h3>
-        <ul>
-          {mailBox.map(({ label, icon, count }) => (
-            <li key={label} className={styles.mailbox}>
-              <a href="#" className="d-flex">
-                <div className={styles.icon}>
-                  <img src={icon} alt="mailboxImg" />
-                </div>
-                <p>{label} {count}</p>
-              </a>
-            </li>
+        <button>
+          <span>
+            <img className="mr-1" src="/nextmail/images/compose.svg" alt="compose" />
+          </span>Compose
+          </button>
+        <section className="border-bottom">
+          <h3 className={styles.mailbox}>MAILBOX</h3>
+          <ul className="mb-0">
+            {mailBox.map(({ label, icon, count }) => (
+              <li key={label} className="d-flex">
+                <a href="#" className="d-flex">
+                  <div className={styles.icon}>
+                    <img src={icon} alt="mailboxImg" />
+                  </div>
+                  <p>{label} {count}</p>
+                </a>
+              </li>
 
-          ))}
-        </ul>
-        <hr />
-        <h3>LISTS</h3>
-        <ul>
+            ))}
+          </ul>
+        </section>
+        <h3 className={styles.mailbox}>LISTS</h3>
+        <ul className="border-bottom pb-1">
           {listElements.map((element) => (
             <li key={element}>
               <a href="#" className="d-flex">
@@ -35,11 +40,10 @@ const Navigation = (props) => {
 
           ))}
         </ul>
-        <hr />
-        <h3>LABELS</h3>
+        <h3 className="pt-1 pb-2">LABELS</h3>
         <ul>
           {labels.map(({ name, icon }) => (
-            <li key={name} className={styles.mailbox}>
+            <li key={name} className="d-flex">
               <a href="#" className="d-flex">
                 <div className={styles.icon}>
                   <img src={icon} alt="labelIcon" />

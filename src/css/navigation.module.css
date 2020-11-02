@@ -1,9 +1,9 @@
 .layout {
-    width: 222px;
+    width: 204px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1.4 1 0;
+    /* flex: 1.4 1 0; */
     color: #8F929D;
 }
 
@@ -13,7 +13,8 @@ a {
 
 .innerBox {
     padding: 0 24px 0 32px;
-}
+    margin-top: 28px;
+}   
 
 h3 {
     font-size: 15px;
@@ -27,7 +28,8 @@ ul {
 }
 
 .mailbox {
-    display: flex;
+    padding-top: 22px;
+    padding-bottom: 7px;
 }
 
 .icon {
@@ -35,7 +37,6 @@ ul {
 }
 
 .profile {
-    /* margin: 12px; */
     padding: 12px;
     display: flex;
     border-top: solid 1px #8E8E93;
@@ -58,9 +59,10 @@ button:focus {
 }
 
 .profileImg {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    margin-left: 4px;
 }
 
 .name {

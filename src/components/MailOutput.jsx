@@ -29,27 +29,28 @@ const MailOutput = (props) => {
             <div className={styles.messageTitle}>Nextmail New Look</div>
             <div className={styles.profile}>
                 <img src="/nextmail/images/profile.svg" alt="profileImg" className={styles.profileImg} />
-                <div style={{ marginLeft: '5px' }}>
+                <div className="ml-2">
                     <div className={styles.name}>{profile.name}</div>
                     <div className={styles.mail}>{profile.mail}</div>
                 </div>
+                <div className={styles.time + " mt-1"}>11: 00 AM, Today</div>
             </div>
-            <div className={styles.article} style={{ width: '90%' }}>
-                <p>Hello Adithya, <hr className="mt-2" />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div className={styles.article}>
+                <p>Hello Adithya,</p>
+                <p className="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                <p className="pt-2">Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident. <br />
-                    <p className={styles.signature}>Cheers <br /> DesignAvenger</p>
+                    <p className={styles.signature + " py-2"}>Cheers <br /> DesignAvenger</p>
                 </p>
             </div>
             <div className={styles.attachment}>
-                <div className="p-1">
+                <div className={styles.attachmentBox}>
                     <img src="/nextmail/images/file.png" alt="file" />
-                    <span>Sample.pdf</span>
+                    <span className="pl-1">Sample.pdf</span>
                 </div>
             </div>
             <div className={styles.btnGroup}>

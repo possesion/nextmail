@@ -1,0 +1,107 @@
+$link-color: #323232;
+$link-mouseover: #4C4F59;
+$shadow-color: #1A37DC;
+$backGround: #fff;
+$placeholder: #65676E30;
+$btn-color: #00B96E;
+$btn-shadow: #079C5F;
+
+
+@font-face {
+    font-family: 'UIDisplay';
+    src: local('MyFont'), url('../fonts/ofont.ru_SF\ UI\ Display.ttf') format('ttf');
+}
+
+@mixin hoverLink {
+    font-weight: 700;
+    color: $link-mouseover;
+    text-decoration: none;
+    transition: font-weight .2s;
+}
+
+// ______________ COMMON STYLES ______________
+body {
+    background: #379AFF;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 27px;
+    // margin-bottom: 15px;
+    color: $link-mouseover;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    :hover {
+        @include hoverLink;
+    }
+}
+
+li {
+    padding: 0;
+    text-decoration: none;
+}
+
+select {
+    background: transparent;
+    border: none;
+}
+
+button {
+    width: 125px;
+    height: 45px;
+    border-radius: 22px;
+    color: #FFF;
+    background: $btn-color;
+    box-shadow: 0 0 15px $btn-shadow;
+    border: none;
+    outline: none;
+
+    :active,
+    :focus {
+        outline: none;
+    }
+}
+
+button:hover {
+    transform: scale(.9);
+    filter: brightness(90%);
+    transition: transform .4s;
+}
+
+input::-webkit-input-placeholder {
+    color: $placeholder;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 6px;
+}
+
+// ______________ COMMON STYLES ______________//
+.container {
+    width: 1093px;
+    margin: 0 auto;
+    font-size: 14px;
+    box-shadow: 0 5px 50px $shadow-color;
+    background: $backGround;
+    border-radius: 4px;
+
+}

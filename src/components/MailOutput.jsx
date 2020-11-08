@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../css/mailOutput.module.css'
+import styles from '../assets/scss/mailOutput.module.scss'
 const MailOutput = (props) => {
-    const { profile, article } = props;
-    console.log(profile.name)
+    const { profile } = props;
+
     return <div className={styles.layout}>
 
         <div className={styles.menu}>
@@ -25,39 +25,52 @@ const MailOutput = (props) => {
                 <img src="/nextmail/images/trash.svg" alt="letter" />
             </div>
         </div>
-        <div className={styles.content}>
+        <div className={styles.messageHeader}>
             <div className={styles.messageTitle}>Nextmail New Look</div>
             <div className={styles.profile}>
-                <img src="/nextmail/images/profile.svg" alt="profileImg" className={styles.profileImg} />
-                <div className="ml-2">
+                <img src="/nextmail/images/profile.svg" alt="profileImg" />
+                <div className={styles.sender}>
                     <div className={styles.name}>{profile.name}</div>
-                    <div className={styles.mail}>{profile.mail}</div>
+                    <div className={styles.mail}>From:  {profile.mail}</div>
                 </div>
-                <div className={styles.time + " mt-1"}>11: 00 AM, Today</div>
+                <div className={styles.time}>11: 00 AM, Today</div>
             </div>
+        </div>
+        <div className={styles.divider} />
+        <section className={styles.textPosition}>
             <div className={styles.article}>
                 <p>Hello Adithya,</p>
-                <p className="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.</p>
-                <p className="pt-2">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident. <br />
-                    <p className={styles.signature + " py-2"}>Cheers <br /> DesignAvenger</p>
-                </p>
+                cupidatat non proident. <br /></p>
+                <p className={styles.signature}>Cheers <br /> DesignAvenger</p>
+
             </div>
             <div className={styles.attachment}>
-                <div className={styles.attachmentBox}>
+                <div>
                     <img src="/nextmail/images/file.png" alt="file" />
-                    <span className="pl-1">Sample.pdf</span>
+                    <span>Sample.pdf</span>
                 </div>
             </div>
             <div className={styles.btnGroup}>
-                <button className={styles.reply}><span><img className="mr-1" src="/nextmail/images/left.svg" alt="left" /></span>Reply</button>
-                <button className={styles.forward}><span><img className="mr-1" src="/nextmail/images/right.svg" alt="right" /></span>Forward</button>
+                <button className={styles.reply}>
+                    <span>
+                        <img src="/nextmail/images/left.svg" alt="left" />
+                    </span>
+                        Reply
+                </button>
+                <button className={styles.forward}>
+                    <span>
+                        <img src="/nextmail/images/right.svg" alt="right" />
+                    </span>
+                        Forward
+                </button>
             </div>
-        </div>
+        </section>
     </div>
 }
 

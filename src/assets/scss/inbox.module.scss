@@ -1,0 +1,125 @@
+$bg-color: #F9F9F9;
+$activeElement: #fff;
+$activeBorder: #379AFF;
+$searchPlaceholder: #65676E30;
+$messageTitle: #4C4F59;
+$select: #484C51;
+$contactColor: #A3A3A8;
+
+
+.layout {
+    width: 334px;
+    background: $bg-color;
+    padding-top: 20px;
+    /* flex: 3 1 0; */
+}
+
+.active {
+    background: $activeElement;
+    border-left: 2px solid $activeBorder;
+}
+
+.navBar {
+    margin-top: 12px;
+
+    .form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+
+        .searchBar {
+            box-sizing: border-box;
+            width: 82%;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 40px;
+            border: 1px solid rgba(151, 151, 151, 0.101591);
+            border-radius: 21.5px;
+            outline: none;
+
+        }
+    }
+}
+
+.searchImg {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+    opacity: .4;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 26px;
+
+}
+
+.span {
+    font-weight: 300;
+    font-size: 12px;
+    color: $messageTitle;
+}
+
+.selectOptions {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: $select;
+
+    option {
+        background: $bg-color;
+    }
+}
+
+.wrapper {
+    overflow-y: scroll;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background-color: #999;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 25px 26px 15px;
+
+    .text {
+        font-size: 12px;
+        line-height: 14px;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 9px;
+        padding-left: 14px;
+        color: $contactColor;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 17px;
+    color: $messageTitle;
+    font-style: normal;
+
+    .dot {
+        margin-right: 8px;
+    }
+}

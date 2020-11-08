@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import styles from '../css/inbox.module.css'
-const Inbox = ({ messageBox }) => {
-    // const [active, setActive] = useState(false);
+import styles from '../assets/scss/inbox.module.scss'
 
+const Inbox = ({ messageBox }) => {
+    const [activeMessage, setActiveMessage] = useState(1);
+    const handleClick = (id) => (e) => {
+        e.preventDefault();
+        setActiveMessage(id);
+    }
     return <section className={styles.layout}>
 
-        <nav className="navbar navbar-light bg-light w-100 m-auto mt-4">
-            <form className="form mx-2  input-group-lg w-100">
+        <nav className={styles.navBar}>
+            <form className={styles.form}>
                 <input
-                    className={styles.searchBar + " form-control mr-sm-2 pb-3 rounded-pill"}
+                    className={styles.searchBar}
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
@@ -28,22 +32,28 @@ const Inbox = ({ messageBox }) => {
                 </select>
             </div>
         </div>
-        {/* <div class="col-12"> */}
-        <ul className={styles.wrapper + " list-group overflow-auto"} id="list-tab" role="tablist" style={{ height: '610px' }}>
-            {messageBox.map(({ title, contact, time }) => {
-                return <li className={styles.list}>
-                    <a className="list-group-item list-group-item-action border-bottom" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                        <div className={styles.message}>
-                            <div className={styles.title}>{title}<span className={styles.span}>{time}</span></div>
-                            <div className={styles.text}>{contact}</div>
-                        </div>
-                    </a>
+        <ul className={styles.wrapper} id="list-tab" role="tablist" style={{ height: '580px' }}>
+            {messageBox.map(({ id, title, contact, time, attachment }) => {
+                return <li key={id} className={activeMessage === id ? styles.active : ''}>
+                    <div>
+                        <a href="/" onClick={handleClick(id)}>
+                            <div className={styles.message}>
+                                <div className={styles.title}>
+                                    <div>
+                                        <span className={styles.dot}>
+                                            <img src="/nextmail/images/dot.svg" alt="dot" />
+                                        </span>
+                                        {title}
+                                    </div>
+                                    <span className={styles.span}>{time}</span>
+                                </div>
+                                <div className={styles.text}>{contact} {attachment !== '' ? <img style={{ marginLeft: '190px' }} src={attachment} alt="pin" /> : null}</div>
+                            </div>
+                        </a>
+                    </div>
                 </li>
-
             })}
-
         </ul>
-        {/* </div> */}
     </section>
 }
 

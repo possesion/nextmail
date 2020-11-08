@@ -1,0 +1,43 @@
+$link-color: #323232;
+$link-mouseover: #4C4F59;
+
+@mixin hoverLink {
+    font-weight: bold;
+    color: $link-mouseover;
+    text-decoration: none;
+    transition: font-weight .2s;
+}
+
+// ______________ COMMON STYLES ______________
+
+a {
+    color: $link-color;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+
+    :hover {
+        @include hoverLink();
+    }
+}
+
+li {
+    padding: 0;
+}
+
+// ______________ COMMON STYLES ______________//
+
+.container {
+    display: flex;
+    height: 90%;
+    margin-top: 20px;
+    /* padding-left: 32px; */
+    /* background: #D3D3D3; */
+}

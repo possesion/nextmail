@@ -1,5 +1,5 @@
 import NextMail from './components/NextMail'
-import style from './css/style.module.css'
+import style from './assets/scss/style.module.scss'
 
 function App() {
   return (

@@ -1,29 +1,22 @@
 import React from 'react'
 import styles from '../assets/scss/mailOutput.module.scss'
+
 const MailOutput = (props) => {
     const { profile } = props;
-
+    const icons = [
+        { src: "/nextmail/images/letter.svg", name: "letter" },
+        { src: "/nextmail/images/back.svg", name: "back" },
+        { src: "/nextmail/images/alarm.svg", name: "alarm" },
+        { src: "/nextmail/images/burger.svg", name: "burger" },
+        { src: "/nextmail/images/marker.svg", name: "marker" },
+        { src: "/nextmail/images/trash.svg", name: "trash" }
+    ];
     return <div className={styles.layout}>
-
         <div className={styles.menu}>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/letter.svg" alt="letter" />
-            </div>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/back.svg" alt="back" />
-            </div>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/alarm.svg" alt="alarm" />
-            </div>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/burger.svg" alt="burger" />
-            </div>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/marker.svg" alt="marker" />
-            </div>
-            <div className={styles.circle}>
-                <img src="/nextmail/images/trash.svg" alt="letter" />
-            </div>
+            {icons.map(icon => (
+                <div key={icon.name} className={styles.circle}>
+                    <img src={icon.src} alt={icon.name} />
+                </div>))}
         </div>
         <div className={styles.messageHeader}>
             <div className={styles.messageTitle}>Nextmail New Look</div>
@@ -48,7 +41,6 @@ const MailOutput = (props) => {
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident. <br /></p>
                 <p className={styles.signature}>Cheers <br /> DesignAvenger</p>
-
             </div>
             <div className={styles.attachment}>
                 <div>

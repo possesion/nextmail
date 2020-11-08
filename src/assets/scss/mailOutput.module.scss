@@ -14,29 +14,30 @@ $btnReply: #FFF;
 
 .menu {
     display: flex;
-    margin-top: 30px;
-    padding-left: 30px;
+    margin-top: 29px;
+    padding-left: 31px;
     padding-bottom: 30px;
     border-bottom: 1px solid $menuBorder;
-
-    .circle {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        border: 1px solid $circleBorder;
-        margin-right: 8px;
-        display: flex;
-        justify-content: center;
-
-        :nth-last-child(1) {
-            margin-right: 0;
-        }
-    }
 }
 
-.circle:hover {
-    transform: scale(.9);
-    transition: transform .4s;
+.circle {
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid $circleBorder;
+    margin-right: 8px;
+    cursor: pointer;
+
+    :nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(.9);
+        transition: transform .4s;
+    }
 }
 
 .messageHeader {
@@ -46,7 +47,7 @@ $btnReply: #FFF;
     .messageTitle {
         font-style: normal;
         font-weight: normal;
-        margin: 17px 0;
+        margin: 18px 0;
         font-size: 24px;
         line-height: 32px;
         color: $main;
@@ -54,36 +55,35 @@ $btnReply: #FFF;
 
     .profile {
         display: flex;
-        padding: 5px 0 18px 5px;
+        padding: 4px 0 16px 6px;
 
         img {
             width: 45px;
             height: 45px;
             border-radius: 50%;
         }
+    }
+}
 
-        .sender {
-            margin-top: 4px;
-            margin-left: 12px;
+.sender {
+    margin-top: -1px;
+    margin-left: 10px;
 
-            .name {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                color: $main;
-                ;
-            }
+    .name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: $main;
+    }
 
-            .mail {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 12px;
-                padding-top: 3px;
-                line-height: 14px;
-                letter-spacing: .7px;
-                color: $main;
-            }
-        }
+    .mail {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        padding-top: 3px;
+        line-height: 14px;
+        letter-spacing: .7px;
+        color: $main;
     }
 }
 
@@ -92,7 +92,7 @@ $btnReply: #FFF;
     border-bottom: 1px solid $dividerColor;
 }
 
-section.textPosition {
+.textPosition {
     padding-left: 30px;
     padding-right: 24px;
 }
@@ -111,34 +111,41 @@ section.textPosition {
 
 .article {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 200;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 25px;
     color: $mailBody;
     margin-right: 8px;
     border-bottom: 1px solid $dividerColor;
 
     p {
-        margin-top: 2px;
-        margin-bottom: 24px;
+        margin-top: 4px;
+        margin-bottom: 18px;
 
     }
 
     .signature {
-        margin-top: 29px;
-        margin-bottom: 39px;
+        margin-top: 34px;
+        margin-bottom: 41px;
         line-height: 28px;
     }
 }
 
+
 .attachment {
     width: 108px;
-    margin: 19px 0;
+    margin-top: 19px;
+    margin-bottom: 30px;
     padding: 4px 0;
     border: 1px solid $attachmentBorder;
     border-radius: 4px;
     cursor: pointer;
     align-items: flex-end;
+
+    &:hover {
+        border: 1px solid #65676E;
+        transition: border .4s;
+    }
 
     div {
         display: flex;
@@ -148,15 +155,11 @@ section.textPosition {
         span {
             margin-left: 4px;
             font-size: 12px;
+            font-weight: 200;
             color: $attachment;
             opacity: .5;
         }
     }
-}
-
-.attachment:hover {
-    border: 1px solid #65676E;
-    transition: border .4s;
 }
 
 .btnGroup {

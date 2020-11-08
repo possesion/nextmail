@@ -7,6 +7,8 @@ const Inbox = ({ messageBox }) => {
         e.preventDefault();
         setActiveMessage(id);
     }
+    const selects = ["unread", "sent", "featured", "drafts"];
+    const active = (id) => activeMessage === id ? styles.active : '';
     return <section className={styles.layout}>
 
         <nav className={styles.navBar}>
@@ -23,20 +25,19 @@ const Inbox = ({ messageBox }) => {
         <div className={styles.header}>
             <h2>Inbox</h2>
             <div>
-                <span className={styles.span}>Sort by  </span>
+                <span className={styles.span}>Sort by: </span>
                 <select className={styles.selectOptions}>
-                    <option value="unread">unread</option>
-                    <option value="sent">sent</option>
-                    <option value="featured">featured</option>
-                    <option value="drafts">drafts</option>
+                    {selects.map(select => (
+                        <option key={select} value={select}>{select}</option>
+                    ))}
                 </select>
-            </div>
-        </div>
-        <ul className={styles.wrapper} id="list-tab" role="tablist" style={{ height: '580px' }}>
+            </div >
+        </div >
+        <ul className={styles.wrapper} id="list-tab" role="tablist">
             {messageBox.map(({ id, title, contact, time, attachment }) => {
-                return <li key={id} className={activeMessage === id ? styles.active : ''}>
+                return <li key={id} className={active(id)}>
                     <div>
-                        <a href="/" onClick={handleClick(id)}>
+                        <a href="#" onClick={handleClick(id)}>
                             <div className={styles.message}>
                                 <div className={styles.title}>
                                     <div>
@@ -47,14 +48,17 @@ const Inbox = ({ messageBox }) => {
                                     </div>
                                     <span className={styles.span}>{time}</span>
                                 </div>
-                                <div className={styles.text}>{contact} {attachment !== '' ? <img style={{ marginLeft: '190px' }} src={attachment} alt="pin" /> : null}</div>
+                                <div className={styles.text}>
+                                    {contact}
+                                    {attachment && <img src={attachment} alt="pin" />}
+                                </div>
                             </div>
                         </a>
                     </div>
                 </li>
             })}
         </ul>
-    </section>
+    </section >
 }
 
 export default Inbox;

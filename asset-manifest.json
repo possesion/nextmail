@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/nextmail/static/css/main.9626236d.chunk.css",
-    "main.js": "/nextmail/static/js/main.59652bf9.chunk.js",
-    "main.js.map": "/nextmail/static/js/main.59652bf9.chunk.js.map",
+    "main.css": "/nextmail/static/css/main.a3416e83.chunk.css",
+    "main.js": "/nextmail/static/js/main.225480e5.chunk.js",
+    "main.js.map": "/nextmail/static/js/main.225480e5.chunk.js.map",
     "runtime-main.js": "/nextmail/static/js/runtime-main.2d3ccfa7.js",
     "runtime-main.js.map": "/nextmail/static/js/runtime-main.2d3ccfa7.js.map",
-    "static/js/2.288d899f.chunk.js": "/nextmail/static/js/2.288d899f.chunk.js",
-    "static/js/2.288d899f.chunk.js.map": "/nextmail/static/js/2.288d899f.chunk.js.map",
+    "static/js/2.eaad6e57.chunk.js": "/nextmail/static/js/2.eaad6e57.chunk.js",
+    "static/js/2.eaad6e57.chunk.js.map": "/nextmail/static/js/2.eaad6e57.chunk.js.map",
     "static/js/3.57a986aa.chunk.js": "/nextmail/static/js/3.57a986aa.chunk.js",
     "static/js/3.57a986aa.chunk.js.map": "/nextmail/static/js/3.57a986aa.chunk.js.map",
     "index.html": "/nextmail/index.html",
-    "static/css/main.9626236d.chunk.css.map": "/nextmail/static/css/main.9626236d.chunk.css.map",
-    "static/js/2.288d899f.chunk.js.LICENSE.txt": "/nextmail/static/js/2.288d899f.chunk.js.LICENSE.txt",
-    "static/media/style.module.scss": "/nextmail/static/media/ofont.ru_SF UI Display.fe7a31e2.ttf"
+    "static/css/main.a3416e83.chunk.css.map": "/nextmail/static/css/main.a3416e83.chunk.css.map",
+    "static/js/2.eaad6e57.chunk.js.LICENSE.txt": "/nextmail/static/js/2.eaad6e57.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2d3ccfa7.js",
-    "static/js/2.288d899f.chunk.js",
-    "static/css/main.9626236d.chunk.css",
-    "static/js/main.59652bf9.chunk.js"
+    "static/js/2.eaad6e57.chunk.js",
+    "static/css/main.a3416e83.chunk.css",
+    "static/js/main.225480e5.chunk.js"
   ]
 }

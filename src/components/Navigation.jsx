@@ -22,7 +22,7 @@ const Navigation = (props) => {
                 <div className={styles.icon}>
                   <img src={icon} alt="mailboxImg" />
                 </div>
-                <a href="/">{label} {count}</a>
+                <a href="#">{label} {count}</a>
               </li>
             ))}
           </ul>
@@ -31,7 +31,7 @@ const Navigation = (props) => {
         <ul className={styles.listBorder}>
           {listElements.map((element) => (
             <li key={element}>
-              <a href="/" className={styles.flex}>
+              <a href="#" className={styles.flex}>
                 {element}
               </a>
             </li>
@@ -45,7 +45,7 @@ const Navigation = (props) => {
                 <div className={styles.icon}>
                   <img src={icon} alt="labelIcon" />
                 </div>
-                <a href="/">{name} {count}</a>
+                <a href="#">{name} {count}</a>
               </li>
             ))}
           </ul>

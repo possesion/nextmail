@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nextmail/static/css/main.a3416e83.chunk.css",
-    "main.js": "/nextmail/static/js/main.225480e5.chunk.js",
-    "main.js.map": "/nextmail/static/js/main.225480e5.chunk.js.map",
+    "main.js": "/nextmail/static/js/main.d199eb7b.chunk.js",
+    "main.js.map": "/nextmail/static/js/main.d199eb7b.chunk.js.map",
     "runtime-main.js": "/nextmail/static/js/runtime-main.2d3ccfa7.js",
     "runtime-main.js.map": "/nextmail/static/js/runtime-main.2d3ccfa7.js.map",
     "static/js/2.eaad6e57.chunk.js": "/nextmail/static/js/2.eaad6e57.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2d3ccfa7.js",
     "static/js/2.eaad6e57.chunk.js",
     "static/css/main.a3416e83.chunk.css",
-    "static/js/main.225480e5.chunk.js"
+    "static/js/main.d199eb7b.chunk.js"
   ]
 }
